@@ -4,10 +4,21 @@ package com.okdevtv.java;
  * Hello world!
  *
  */
-public class App 
+public class App implements AppInterface
 {
-    public static void main( String[] args )
+    private static String msg = "Hello World!";
+
+	public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+		print(msg);
     }
+
+	private static void print(String x) {
+		System.out.println( x );
+	}
+
+	public String getString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
